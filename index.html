@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Porto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+  <script src="script.js"></script>
+  <header class="navbar">
+     <div class="container">
+        <h1 class="logo">Burguer Porto</h1>
+        <button class="menu-toggle" aria-label="Menu"> <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="main-nav"> <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Bem vindo ao Burguer Porto</h2>
+        <p>Experience the best burgers in town, crafted with love and the freshest ingredients.</p>
+        <a href="#menu" class="btn">Explore Menu</a>
+      </div>
+    </section>
+
+    <section id="menu" class="menu">
+      <div class="container">
+        <h2>Nosso cardápio</h2>
+        <div class="menu-grid">
+          <div class="burger-card">
+            <img src="burger1.jpg" alt="Classic Burger">
+            <h3>Classic Burger</h3>
+            <p>A timeless favorite with lettuce, tomato, and our special sauce.</p>
+          </div>
+          <div class="burger-card">
+            <img src="burger2.jpg" alt="Cheese Lover">
+            <h3>Cheese Lover</h3>
+            <p>Loaded with gooey melted cheese for the ultimate indulgence.</p>
+          </div>
+          <div class="burger-card">
+            <img src="burger3.jpg" alt="BBQ Bliss">
+            <h3>BBQ Bliss</h3>
+            <p>Smoky BBQ sauce, crispy onions, and cheddar cheese.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>At Burguer Porto, we take pride in crafting the most delicious and satisfying burgers. Our mission is to provide a memorable dining experience for every customer.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Burguer Porto. All Rights Reserved.</p>
+      <ul class="social-links">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
